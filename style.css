@@ -1,0 +1,152 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background: #E5E5E5;
+
+}
+
+header {
+    padding: 1px;
+    background: #E5E5E5;
+
+}
+
+.caja{
+
+    width:940px;
+    margin: 0.5% auto;
+}
+
+main{
+    margin: 3% auto;
+    width:940px;
+    background: #E5E5E5;
+    position: relative;
+
+}
+
+
+.codificacion{
+    width: 50%;
+    display: inline-block;
+    background: #E5E5E5;
+}
+
+.codificacion:hover{
+    opacity: 0.8;
+}
+
+.codificacion h6{
+    line-height: 2;
+    font-style: italic;
+}
+
+.codificacion h6:before{
+    content:"⚠";
+}
+
+.enviar{
+    width:40%;
+    padding: 13px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: #0A3871;
+    border: none;
+    border-radius:10px;
+    transition: 1s all; /*Aplica transicion a todas las propiedades*/
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background:#757FB2;
+    transform: scale(1.05);
+}
+
+.decodificacion{
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+}
+
+.decodificacion:hover{
+    opacity: 0.8;
+}
+
+.entrada-texto, .salida-texto{
+    padding: 1em;    
+    border: 5px #757FB2;
+    border-style: dashed solid;
+    border-radius:10px;
+    font-size: 20px;
+    resize:vertical;
+    transition: 800ms;
+    box-shadow: 10px -16px #AAB2D5;
+
+
+}
+
+.cartel{
+    position: absolute;
+    top:20px;
+    left: 40px;
+}
+
+.muñeco{
+    width: 75%;
+
+}
+
+.mensaje1{
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+.copiar{
+    /* margin: 30px auto; */
+    margin-top: 32px;
+    margin-left: 30%;
+
+}
+
+.boton-copiar{
+    width: 40%;
+    background: #cccccc;
+    color:#0A3871;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius:10px;
+    padding: 13px 0;
+    transition: 1s all;
+    cursor:pointer;
+
+}
+
+.boton-copiar:hover{
+    transform: scale(1.05);
+    border: 5px none #0A3871;
+
+}
+
+
+footer{
+    text-align: center;
+    padding: 40px;
+    margin-top: 30px;
+    background: linear-gradient(#E5E5E5,#F3F5FC);
+}
+
+.copyright{
+    color:#000000;
+    font-size: 13px;
+    margin: 5px;
+}
+
+
+
+    
+    

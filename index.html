@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<!-- <meta name="viewport" content="width=device-width"> -->
+		<title>Encriptador de texto</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+		<header>
+			<div class="caja">
+				<h1>
+					<img src="imagenes/logo.svg" alt="Logo de del encriptador de texto">
+				</h1>
+			</div>
+		</header>
+
+		<main>
+			<section class="codificacion">
+				<textarea type="text" id="entrada-texto" class="entrada-texto" rows="18" cols="35" placeholder="Ingresa al texto a encriptar." onKeyUp="ocultardiv()"></textarea>
+				<h6>Ingresa solo letras minusculas y sin acentos.</h6>
+				<div>
+					<button type="button" class="enviar" onclick="llamadaencriptar()">Encriptar</button>
+					<button type="button" class="enviar" onclick="llamadadesencriptar()">Desencriptar</button>
+				</div>
+			</section>
+			<section class="decodificacion">
+				<textarea type="text" id="salida-texto" class="salida-texto" rows="18" cols="35" disabled></textarea>
+				<div class="cartel" id="cartel">
+					<img class="muñeco" src="imagenes/Muñeco.svg">
+					<p class="mensaje1">Ningun mensaje fue encontrado.</p>
+					<p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
+				</div>
+				<div class="copiar">
+					<button type="button" class="boton-copiar" id="boton-copiar" onclick="copiar()">Copiar</button>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p class="copyright">&copy; Decrypter by Diego Garcia - 2022</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
